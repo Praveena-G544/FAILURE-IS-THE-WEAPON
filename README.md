@@ -4,7 +4,7 @@ A 3D browser survival game (Three.js + Vite) where the AI agent **NEXA** observe
 
 **Core concept: FAILURE → MEMORY → ADAPTATION**
 
-Live Demo: https://praveena-g544.github.io/FAILURE-IS-THE-WEAPON/
+Live Demo:  https://praveena-g544.github.io/FAILURE-IS-THE-WEAPON/
 
 ## Technology stack
 JavaScript (ES modules), Three.js, Vite, HTML/CSS, localStorage (player memory), Web Speech API (NEXA voice + subtitles), Web Audio API.
