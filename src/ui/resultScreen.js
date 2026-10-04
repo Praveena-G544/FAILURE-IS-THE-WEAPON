@@ -1,0 +1,3 @@
+// ROUND_n_RESULT: COMPLETE / FAILED, eligibility, NEXA analysis with the real metrics, and the CONTINUE button.
+import {show,bind,cards,esc} from './core.js';
+export const result=(v,s,label,next,n)=>{show(`<h2>ROUND ${n} ${v.ok?'COMPLETE':'FAILED'}</h2><div class="big ${v.ok?'ok':'no'}">${v.ok?'ELIGIBLE FOR ROUND '+(n+1):'NOT ELIGIBLE — ELIMINATED'}</div><p style="max-width:520px">NEXA ANALYSIS: “${esc(v.text)}”</p>${cards(s.show||[['SCORE',s.score],['ACCURACY',s.acc+'%'],['MISTAKES',s.mistakes]])}<button id="n" class="cta2" style="position:static;transform:none">${label}</button>`);bind('n',next)};

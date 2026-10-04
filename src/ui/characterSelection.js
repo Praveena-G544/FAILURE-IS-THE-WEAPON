@@ -1,0 +1,4 @@
+// CHARACTER SELECTION + CONTINUE-PROFILE welcome. These handlers exist only while their screen is on (DOM is replaced on every state change).
+import {show,bind,esc} from './core.js';
+export const select=(name,l,r,ok)=>{show(`<h2>CHOOSE YOUR CHARACTER</h2><button id="l">◀</button><b style="font-size:20px;margin:0 20px">${name}</b><button id="r">▶</button><div><button id="k" style="font-size:22px">SELECT THIS CHARACTER</button></div>`,'top:auto;bottom:24px;transform:translate(-50%,0)');bind('l',l);bind('r',r);bind('k',ok)};
+export const welcome=(P,ok,chg)=>{show(`<h2>WELCOME BACK, ${esc(P.name)}</h2><p>Your saved profile has been found.</p><p>Round ${Math.min(5,P.round)} · Highest ${P.highest} · Score ${P.score}</p><button id="a">CONTINUE</button><button id="c">CHANGE CHARACTER</button>`);bind('a',ok);bind('c',chg)};
