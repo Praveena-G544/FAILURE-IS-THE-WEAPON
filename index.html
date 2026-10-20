@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FAILURE IS THE WEAPON</title>
+<style>
+*{box-sizing:border-box}body{margin:0;overflow:hidden;font-family:'Segoe UI',system-ui,sans-serif;color:#eaf6ff;background:#0b1030}
+#c{position:fixed;inset:0;width:100%;height:100%}
+#ui,#hud{position:fixed;inset:0;pointer-events:none}#ui>*,#hud>*{pointer-events:auto}
+.panel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(10,16,48,.8);border:1px solid #19e6ff;border-radius:16px;padding:26px 34px;box-shadow:0 0 40px #19e6ff55;backdrop-filter:blur(8px);text-align:center;max-width:94vw;max-height:94vh;overflow:auto}
+h1{font-size:clamp(28px,6vw,64px);margin:0 0 8px;letter-spacing:.1em;background:linear-gradient(90deg,#19e6ff,#c04bff,#ff8a3d);-webkit-background-clip:text;color:transparent}
+h2{margin:0 0 10px;color:#19e6ff}
+button,input{font:inherit;border-radius:10px;border:1px solid #c04bff;background:#1a1450;color:#fff;padding:10px 22px;margin:5px;cursor:pointer;transition:.2s}
+button:hover{background:#c04bff;box-shadow:0 0 20px #c04bff;transform:scale(1.05)}
+input{cursor:text;text-align:center;text-transform:uppercase;letter-spacing:.2em;font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:14px 0}
+.card{background:#ffffff14;border:1px solid #19e6ff66;border-radius:12px;padding:10px;animation:in .6s both}.card b{display:block;font-size:22px;color:#ff8a3d}
+@keyframes in{from{opacity:0;transform:translateY(12px)}}
+.big{font-size:clamp(22px,4.5vw,44px);font-weight:800;margin:10px 0}.ok{color:#3dff9a}.no{color:#ff4466}
+#bar{position:absolute;top:0;left:0;right:0;display:flex;gap:22px;justify-content:center;padding:10px;background:linear-gradient(#0b1030cc,transparent);font-weight:700;pointer-events:none}
+#bar2{position:absolute;top:34px;left:0;right:0;text-align:center;font-size:12px;letter-spacing:.12em;opacity:.85;pointer-events:none;text-shadow:0 0 6px #000}
+#msg{position:absolute;top:58px;width:100%;text-align:center;color:#ffd24a;font-size:19px;text-shadow:0 0 10px #000;pointer-events:none}
+#sub{position:fixed;bottom:6%;left:50%;transform:translateX(-50%);background:#000b;border-left:4px solid #19e6ff;padding:10px 22px;border-radius:8px;font-size:20px;opacity:0;transition:.3s;pointer-events:none}
+#sub.on{opacity:1}#sub b{color:#19e6ff;display:block;font-size:12px;letter-spacing:.3em}
+.nx{position:absolute;top:16px;left:16px;display:flex;gap:12px;align-items:center;background:#0a1030cc;border:1px solid #19e6ff;border-radius:14px;padding:10px 16px;box-shadow:0 0 24px #19e6ff66}.nx b{display:block;letter-spacing:.3em;color:#19e6ff;font-size:20px}.nx small,.nx i{display:block;font-size:11px;opacity:.8;font-style:normal}
+.ring{width:46px;height:46px;border-radius:50%;border:3px solid #19e6ff;border-top-color:#c04bff;animation:sp 1.2s linear infinite;box-shadow:0 0 16px #19e6ff}@keyframes sp{to{transform:rotate(360deg)}}
+.cta2{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);font-size:26px;padding:14px 40px;animation:pu 1.2s infinite alternate}.cta2:hover{transform:translateX(-50%) scale(1.05)}@keyframes pu{to{box-shadow:0 0 30px #c04bff}}
+.num{font-size:34px;width:76px;height:76px;padding:0}
+#c{touch-action:none}
+</style></head><body><canvas id="c"></canvas><div id="ui"></div><div id="hud"></div><div id="sub"></div><script type="module" src="/src/main.js"></script></body></html>
